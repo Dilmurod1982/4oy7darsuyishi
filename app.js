@@ -11,5 +11,5 @@ function getInitialOdds(n) {
     return odds;
 }
 
-console.log(getInitialOdds(20)); // Output: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
+console.log(getInitialOdds(20)); 
 
