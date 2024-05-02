@@ -1,15 +1,14 @@
 // 1 vazifa
-function getInitialOdds(n) {
-    const odds = [];
-    let currentOdd = 1;
+function son(n) {
+  const toqSon = [];
+  let toq = 1;
 
-    for (let i = 0; i < n; i++) {
-        odds.push(currentOdd);
-        currentOdd += 2;
-    }
+  for (let i = 0; i < n; i++) {
+    toqSon.push(toq);
+    toq += 2;
+  }
 
-    return odds;
+  return toqSon;
 }
 
-console.log(getInitialOdds(20)); 
-
+console.log(son(5));
