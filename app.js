@@ -1,35 +1,15 @@
 // 1 vazifa
-let A = parseInt(prompt("Son kiriting: "));
-A = A * 2;
+function getInitialOdds(n) {
+    const odds = [];
+    let currentOdd = 1;
 
-function toqSon(n) {
-  const toq = [];
-
-  for (let i = 0; i < n; i++) {
-    if (i != i % 2) {
-      toq.push(i);
+    for (let i = 0; i < n; i++) {
+        odds.push(currentOdd);
+        currentOdd += 2;
     }
-  }
-  return toq;
+
+    return odds;
 }
 
-alert(`Siz kiritgan sonda quiydagi toq sonlar mavjud ${toqSon(A)}`);
-// let A = parseInt(prompt("Son kiriting: "));
+console.log(getInitialOdds(20)); // Output: [1, 3, 5, 7, 9, 11, 13, 15, 17, 19]
 
-// function getInitialOdds(n) {
-//   const odds = [];
-//   let currentOdd = 1;
-
-//   for (let i = 0; i < n; i++) {
-//     odds.push(currentOdd);
-//     currentOdd += 2;
-//   }
-
-//   return odds;
-// }
-
-// getInitialOdds(A);
-
-// alert(`Siz kiritgan sonda quiydagi toq sonlar mavjud ${getInitialOdds(A)}`);
-
-// // console.log(getInitialOdds(5));
